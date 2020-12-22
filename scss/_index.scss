@@ -1,0 +1,165 @@
+p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+.banner{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../img/index1.jpg);
+ 
+    height: 870px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.bannerContainer{
+    color: white;
+
+    margin: 0 auto;
+    max-width: 350px;
+    margin-left: 62%;
+    p{
+        line-height: 1.5;
+        
+    }
+    .shopButton{
+        border: 1px solid white;
+        border-radius: 40px;
+    }
+}
+.shopButtonBlack{
+    border: 2px solid black;
+    border-radius: 40px;
+    width: 275px;
+}
+.productText{
+    width: 280px;
+     
+}
+.productContainer{
+    li{
+       max-width: 100%; 
+       
+       
+       .h_555{
+        width: 555px;
+        height: 555px;
+        
+       }
+       .h_1080{
+        width: 555px;
+        height: 1080px;
+        
+       }
+    }
+    img{
+        width: 100%;
+        height: 555px;
+        vertical-align: middle;
+        
+        object-fit: cover;
+    }
+    .productPhoto{
+        height: 255px;
+        overflow: hidden;
+    }
+    max-width: 1200px;
+    margin: 0px auto;
+    
+}
+.photo_md{
+    width: 100%;
+    height: 540px;
+    
+}
+.h_1080 .longPhoto{
+    height: 1080px;
+}
+.selectContainer{
+    margin: 0 auto;
+    
+}
+.w90{
+    width: 50%;
+}
+.overHidden{
+    object-fit: cover;
+}
+.bannerFooter{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../img/index10.jpg);
+ 
+    height: 400px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.bannerContainerFooter{
+    color: white;
+
+    margin: 0 auto;
+    max-width: 350px;
+    margin-left: 12%;
+    p{
+        line-height: 1.5;
+        
+    }
+    .shopButton{
+        border: 1px solid white;
+        border-radius: 40px;
+    }
+}
+@media(max-width: 768px){
+    .productText{
+        width:100%;
+         
+    }
+    .productContainer{
+    li{       
+       .h_555{
+        height: auto;
+        width: 100%;
+       }
+       .h_1080{
+        height: auto;
+        width: 100%;
+       }
+       
+    }
+}
+.bannerContainerFooter{
+    justify-content: center;
+
+}
+.h2_sm{
+    font-size: 30px;
+}
+.bannerFooter{
+   background-position-x: 180px;
+
+}
+.bannerContainer{
+    margin-left: 0%;
+    max-width: 90%;
+    padding-left: 10%;
+    padding-right: 0%;
+}
+
+
+
+
+
+
+.shopButtonBlack{
+    margin-top: 0px;
+    width: 100%;
+}
+.smProductTitle{
+    font-size: 30px;
+}
+
+
+}
