@@ -10,7 +10,7 @@
 <body>
         <header>
         <div class="header d-flex justify-content-between align-items-center">
-            <div class="logo ml-3">
+            <div class="logo ml-3 ">
                 <a href="index.html"><img src="img/d’Perfume.png" alt=""></a>
             </div>
             <div class="pt-2 ">
@@ -62,7 +62,7 @@
 
         <main>
             <div class="banner d-flex align-items-center ">
-                <div class="bannerContainer ">
+                <div class="bannerContainer " data-aos="fade-up">
                     <h1>Perfume your day</h1>
                     <p>A perfume is like a piece of clothing, a message, a way of presenting oneself a costume that according to the person who wears it.</p>
                     <div class="shopButton d-flex justify-content-center align-items-center mt-3"><p class="align-middle h4 ">shop now</p></div>
@@ -71,7 +71,7 @@
             </div>
             <section>
                 <ul class="row productContainer p-5">
-                    <li class="row flex-column-reverse flex-md-row ">
+                    <li class="row flex-column-reverse flex-md-row " data-aos="fade-up">
                         <div class="d-flex col-md-6 align-items-md-center justify-content-md-center h_555 p-0">
                             <div class="flex-column productText mt-3 mb-5">
                                 <h2>Gabrielle CHANEL</h2>
@@ -83,7 +83,7 @@
                             <img src="img/chanel.jpg" alt="">
                         </div>
                     </li>
-                    <li class="row flex-column-reverse flex-md-row-reverse ">
+                    <li class="row flex-column-reverse flex-md-row-reverse "data-aos="fade-up">
                         <div class="d-flex col-md-6 align-items-md-center justify-content-md-center h_555 p-0">
                             <div class="flex-column productText mt-3 mb-5">
                                 <h2>Five O’clock Au Gingembre</h2>
@@ -95,7 +95,7 @@
                             <img src="img/gingembre.png" alt="">
                         </div>
                     </li>
-                    <li class="row flex-column-reverse flex-md-row ">
+                    <li class="row flex-column-reverse flex-md-row " data-aos="fade-up">
                         <div class="d-flex col-md-6 align-items-md-center justify-content-md-center h_555 p-0">
                             <div class="flex-column productText mt-3 mb-5">
                                 <h2>CHANEL N°5</h2>
@@ -107,7 +107,7 @@
                             <img src="img/N5.jpg" alt="">
                         </div>
                     </li>
-                    <li class="row flex-column-reverse flex-md-row-reverse ">
+                    <li class="row flex-column-reverse flex-md-row-reverse " data-aos="fade-up">
                         <div class="d-flex col-md-6 align-items-md-center justify-content-md-center h_1080 p-0 flex-column">
                             <div class="flex-column productText mt-3 mb-5">
                                 <h4>1.<br>Levels of Preventive Maintenance Compliance</h4>
@@ -132,7 +132,7 @@
                 </ul>
             </section>
             <section class="bg-success">
-                <div class="selectContainer wrap row justify-content-between">
+                <div class="selectContainer wrap row justify-content-between" data-aos="fade-up">
                     <ul class="row justify-content-between align-items-center pt-5 pb-5 p-5">
                         <li class="col-12 col-md-4  d-flex flex-column align-items-left">
                             <img class="photo_md d-flex overHidden" src="img/photo-1530630458144-014709e10016.png" alt="">
@@ -167,7 +167,7 @@
                 </div>
             </section>
             <section>
-                <ul class="row productContainer p-5">
+                <ul class="row productContainer p-5" data-aos="fade-up">
                     
                     <li class="row flex-column-reverse flex-md-row-reverse ">
                         <div class="d-flex col-md-6 align-items-md-center justify-content-md-center h_555 p-0">
@@ -231,5 +231,31 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+     AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 800, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: true, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+    </script>
 </body>
 </html>
